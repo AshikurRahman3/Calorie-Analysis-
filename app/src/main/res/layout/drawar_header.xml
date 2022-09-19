@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/brown"
+    android:layout_height="150dp">
+
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:scaleType="fitXY"
+        android:id="@+id/drawer_imageview_id"
+        android:layout_height="72dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:text="Tom and Jerry"
+        android:textColor="@color/white"
+        android:id="@+id/drawer_name_textview_id"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="16dp"
+        android:text="tomandjerry@cartoon.com"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:id="@+id/drawer_email_textview_id"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

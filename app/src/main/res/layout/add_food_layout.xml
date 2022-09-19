@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:endIconMode="clear_text"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/addFoodNameEdittextId"
+            android:inputType="text"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:hint="Name"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="0dp"
+           android:layout_weight="2"
+           app:boxBackgroundColor="@android:color/transparent"
+           app:endIconMode="clear_text"
+           android:layout_height="match_parent">
+
+           <EditText
+              android:layout_width="match_parent"
+               android:hint="calories"
+               android:layout_gravity="center_vertical"
+               android:inputType="number"
+               android:textSize="25sp"
+               android:gravity="center"
+               android:id="@+id/addFoodCalorieEdittextId"
+               android:layout_height="match_parent"/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="per"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_height="match_parent"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:padding="0dp"
+            android:id="@+id/addFoodUnitSpinnerId"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

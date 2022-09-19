@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    tools:context=".DiaryMainFoodFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        app:queryHint="search"
+        app:iconifiedByDefault="false"
+        android:id="@+id/add_to_diary_fragment_my_foods_main_food_fragment_searchview_id"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/diary_add_main_food_listview_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:nestedScrollingEnabled="true"
+        android:listSelector="@color/gray_light" />
+
+</LinearLayout>

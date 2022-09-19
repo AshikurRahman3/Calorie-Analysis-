@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/add_to_diary_foodname_textview_id"
+            android:textSize="30sp"
+            tools:text="Fish"
+            android:textColor="@color/blue_light"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/add_to_diary_food_details_textview_id"
+            tools:text="120 calories/piece"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/add_to_diary_date_view_textview_id"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/darker_gray"
+                android:padding="5dp"
+                android:textStyle="bold"
+                tools:text="Date:\t\t\t\t1 Dec, 2022"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="Meal"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+               android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:id="@+id/add_to_diary_meal_select_spinner_id"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:endIconMode="clear_text"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="200dp"
+                android:hint="Quantity"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:textSize="25sp"
+                android:id="@+id/add_to_diary_quantity_edittext_id"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

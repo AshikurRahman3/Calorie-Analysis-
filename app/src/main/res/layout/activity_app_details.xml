@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:fillViewport="true"
+    tools:context=".AppDetails">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:text="Calorie Analysis"
+           android:gravity="center"
+          android:textSize="40sp"
+           android:textColor="@android:color/holo_green_light"
+           android:textStyle="bold|italic"
+           android:layout_marginTop="5dp"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:text="@string/about_app_department"
+           android:gravity="center"
+           android:textStyle="italic|bold"
+           android:layout_marginTop="10dp"
+           android:textAppearance="?android:textAppearanceLarge"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:text="@string/about_app_course"
+           android:gravity="center"
+           android:textStyle="italic|bold"
+           android:layout_marginTop="5dp"
+           android:textAppearance="?android:textAppearanceMedium"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:text="@string/about_app_course_teacher"
+           android:gravity="center"
+           android:textStyle="italic|bold"
+           android:layout_marginTop="5dp"
+           android:textAppearance="?android:textAppearanceMedium"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:text="@string/about_app_group"
+           android:gravity="center"
+           android:textStyle="italic"
+           android:layout_marginTop="5dp"
+           android:textAppearance="?android:textAppearanceMedium"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:textAppearance="?android:textAppearanceMedium"
+           android:layout_marginTop="30dp"
+           android:textStyle="italic|bold"
+           android:text="@string/about_app_general_text"
+           android:gravity="center"
+           android:background="@android:color/darker_gray"
+           android:textColor="@android:color/white"
+           android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+
+
+</ScrollView>

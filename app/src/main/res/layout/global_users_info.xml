@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/global_user_info_rootview_id"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="30dp"
+            android:textStyle="bold"
+            android:text="1."
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:id="@+id/global_user_serial_textview_id"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Miller"
+                android:textSize="20sp"
+                android:id="@+id/global_user_name_textview_id"
+                android:textStyle="bold"
+                android:textColor="@color/blue_light"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="current_weight: 70 kg"
+                android:id="@+id/global_user_current_weight_textview_id"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="start_weight: 72 kg"
+                android:textSize="15sp"
+                android:id="@+id/global_user_start_weight_textview_id"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/global_user_lost_weight_value_textview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-5 kg"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="lost"
+                android:textSize="15sp"
+                android:id="@+id/global_user_lost_gained_textview_id"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

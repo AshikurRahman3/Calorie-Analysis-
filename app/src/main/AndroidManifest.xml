@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/food_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CalorieAnalysis">
+        <activity
+            android:name=".LoggedInUsersDetails"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:theme="@style/Fullscreen_style"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreen"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".UserBodyData"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="User Details" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".MyDiaryActivity2"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".DiaryAddFood"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="Add to Diary" />
+        <activity
+            android:name=".AppDetails"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="About" />
+        <activity
+            android:name=".TestingActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".MyDiaryActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="My Diary"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FoodActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="Foods"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BmiActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="BMI"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/Fullscreen_style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

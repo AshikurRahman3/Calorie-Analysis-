@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".DashboardHomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Calorie Goal"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="2000"
+            android:textColor="@color/blue_dark"
+            android:id="@+id/dashboard_calorie_goal_value_textview_id"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Bmi"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="24"
+                    android:id="@+id/dashboard_bmi_value_textview_id"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Weight"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="80.0"
+                        android:layout_weight="3"
+                        android:id="@+id/dashboard_weight_textview_id"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="kg"
+                        android:layout_marginLeft="3dp"
+                        android:paddingTop="4dp"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:gravity="left|bottom"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Type"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Obese"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:gravity="center"
+                    android:id="@+id/dashboard_body_type_id"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Target Weight"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="65.0"
+                        android:layout_weight="3"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:id="@+id/dashboard_target_weight_textview_id"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:text="kg"
+                        android:layout_marginLeft="3dp"
+                        android:paddingTop="4dp"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:gravity="left|bottom"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <ProgressBar
+                    android:id="@+id/dashboard_progressBar_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminateOnly="false"
+                    android:progress="75"
+                    android:progressDrawable="@drawable/circle_progressbar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="1500"
+                        android:id="@+id/dashboard_calorie_consumed_textview_id"
+                        android:textColor="@android:color/holo_green_light"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="left"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="1500"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:id="@+id/dashboard_left_calorie_textview_id"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Breakfast"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="0"
+                    android:id="@+id/dashboard_breakfast_textview_id"
+                    android:gravity="center"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Lunch"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="0"
+                    android:id="@+id/dashboard_lunch_textview_id"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Dinner"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="0"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:id="@+id/dashboard_dinner_textview_id"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Snacks"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="0"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:id="@+id/dashboard_snacks_textview_id"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Weight Statistics"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_bright"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Body fat"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="You lost"
+                android:id="@+id/dash_board_weight_loss_status_textview_id"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Remaining"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="23.2 %"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/dashboard_body_fat_textview_id"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="match_parent"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="1.8"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:id="@+id/dashboard_lost_weight_textview_id"
+                    android:textSize="24sp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="kg"
+                    android:layout_marginLeft="3dp"
+                    android:paddingTop="7dp"
+                    android:layout_weight="2"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="left|bottom"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="5.8"
+                    android:textStyle="bold"
+                    android:id="@+id/dashboard_remaining_weight_textview_id"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="kg"
+                    android:layout_marginLeft="3dp"
+                    android:paddingTop="7dp"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="left|bottom"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

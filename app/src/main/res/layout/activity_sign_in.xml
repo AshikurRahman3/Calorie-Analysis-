@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_dark"
+    android:orientation="vertical"
+    tools:context=".SignIn">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/sign_in_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+
+
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+
+        android:gravity="center"
+        android:drawableLeft="@drawable/btn_google_light_normal_mdpi"
+        android:text="sign in with google"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/sign_in_guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_in_google"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+        android:text="use as guest"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:layout_width="96dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/sign_in_progressbar_id"
+        android:indeterminateTint="@color/white"
+        android:layout_marginBottom="80dp"
+        android:layout_height="96dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+        <item
+            android:title="Dashboard"
+            android:icon="@drawable/dashboard"
+            android:id="@+id/drawer_dashboard_id"/>
+
+
+    <item
+        android:title="Diary"
+        android:icon="@drawable/diary"
+        android:id="@+id/drawer_diary_id"/>
+
+    <item
+        android:title="Statistics"
+        android:icon="@drawable/body_fitness"
+        android:id="@+id/drawer_overall_statistics_id"/>
+
+    <item
+        android:title="Global Users"
+        android:icon="@drawable/peopls"
+        android:id="@+id/drawer_global_users_id"/>
+
+
+        <item
+            android:title="BMI">
+
+            <menu>
+
+                <item
+                    android:title="Weight History"
+                    android:icon="@drawable/weight_logo"
+                    android:id="@+id/drawer_item_weight_history_id"/>
+
+
+                <item
+                    android:title="BMI"
+                    android:icon="@drawable/bmi_icon"
+                    android:id="@+id/drawer_item_bmi_id"/>
+            </menu>
+
+        </item>
+
+
+
+
+
+        <item
+            android:title="Foods">
+
+            <menu>
+
+                <item
+                    android:title="Main Foods"
+                    android:icon="@drawable/main_food_icon"
+                    android:id="@+id/drawer_item_main_food_id"/>
+
+
+                <item
+                    android:title="Snacks"
+                    android:icon="@drawable/snacks_icon"
+                    android:id="@+id/drawer_item_snack_id"/>
+
+
+
+
+                <item
+                    android:title="Desserts"
+                    android:icon="@drawable/dessert_icon"
+                    android:id="@+id/drawer_item_dessert_id"/>
+
+
+                <item
+                    android:title="Drinks"
+                    android:icon="@drawable/drinks_icon"
+                    android:id="@+id/drawer_item_drink_id"/>
+            </menu>
+
+        </item>
+
+
+        <item
+            android:title="User Info"
+            android:id="@+id/drawer_item_user_detail_id"/>
+
+        <item
+            android:title="About"
+            android:id="@+id/drawer_item_about_id"/>
+
+    <item
+        android:title="Sign out"
+        android:id="@+id/drawer_item_sign_out_id"/>
+
+
+</menu>

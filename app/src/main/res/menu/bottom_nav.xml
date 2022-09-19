@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboard_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/Diary"
+        android:icon="@drawable/diary"
+        android:title="Diary" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:title="" />
+
+    <item
+        android:id="@+id/Bmi"
+        android:icon="@drawable/bmi"
+        android:title="Bmi" />
+
+    <item
+        android:id="@+id/Foods"
+        android:icon="@drawable/food"
+        android:title="Foods" />
+
+</menu>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1059551268961",
+    "project_id": "sust-course-projects",
+    "storage_bucket": "sust-course-projects.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059551268961:android:c0dca44ddcb491f8b61a20",
+        "android_client_info": {
+          "package_name": "com.example.calorieanalysis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059551268961-53fo73b53jva29mhq6pjinonhbmpp8dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPOgL1j3rjS4uJIfJlySCKqHadEl8c1Lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059551268961-53fo73b53jva29mhq6pjinonhbmpp8dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

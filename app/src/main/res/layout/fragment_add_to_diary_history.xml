@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".AddToDiaryHistoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            app:queryHint="search"
+            app:iconifiedByDefault="false"
+            android:id="@+id/add_to_diary_fragment_history_fragment_searchview_id"
+            android:layout_height="wrap_content"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:nestedScrollingEnabled="true"
+            android:dividerHeight="2dp"
+            android:id="@+id/add_to_diary_fragment_history_fragment_listview_id"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

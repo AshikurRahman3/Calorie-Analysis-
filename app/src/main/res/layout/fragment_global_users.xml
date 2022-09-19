@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".GlobalUsersFragment">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:id="@+id/fragment_global_user_searchview_id"
+        app:iconifiedByDefault="false"
+        app:queryHint="search"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_global_listview_id"
+        android:nestedScrollingEnabled="true"/>
+
+
+</LinearLayout>

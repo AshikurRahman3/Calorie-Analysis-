@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DiaryFragment">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:id="@+id/date_picker_button_id"
+        android:backgroundTint="@color/holo_green_light"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        tools:text="Today"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Total"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            android:gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="0"
+            android:id="@+id/total_calorie_textview_id"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:textColor="@color/dark_orange"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Breakfast"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold"
+                    android:gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="0"
+                    android:textColor="@color/dark_orange"
+                    android:id="@+id/breakfast_total_calorie_textview_id"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="end"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/breakfast_listview_id"
+                android:fadeScrollbars="false"
+                android:nestedScrollingEnabled="true"
+                android:listSelector="@color/gray_light"
+                android:layout_height="130dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="Add Breakfast"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:backgroundTint="@color/blue_light"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:gravity="start|center_vertical"
+                android:textStyle="bold"
+                android:id="@+id/add_breakfast_button_id"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Lunch"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold"
+                    android:gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="0"
+                    android:id="@+id/lunch_total_calorie_textview_id"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="end"
+                    android:textColor="@color/dark_orange"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/lunch_listview_id"
+                android:fadeScrollbars="false"
+                android:nestedScrollingEnabled="true"
+                android:listSelector="@color/gray_light"
+                android:layout_height="130dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="Add Lunch"
+                android:backgroundTint="@color/blue_light"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:gravity="start|center_vertical"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                android:id="@+id/add_lunch_button_id"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="Dinner"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dinner_total_calorie_textview_id"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="0"
+                    android:textColor="@color/dark_orange"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/dinner_listview_id"
+                android:fadeScrollbars="false"
+                android:nestedScrollingEnabled="true"
+                android:listSelector="@color/gray_light"
+                android:layout_height="130dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="Add Dinner"
+                android:backgroundTint="@color/blue_light"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:gravity="start|center_vertical"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/add_dinner_button_id"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Snacks"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textStyle="bold"
+                    android:gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="0"
+                    android:id="@+id/snacks_total_calorie_textview_id"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="end"
+                    android:textColor="@color/dark_orange"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/snacks_listview_id"
+                android:fadeScrollbars="false"
+                android:nestedScrollingEnabled="true"
+                android:listSelector="@color/gray_light"
+                android:layout_height="130dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="Add Snacks"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:backgroundTint="@color/blue_light"
+                android:gravity="start|center_vertical"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:id="@+id/add_snacks_button_id"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

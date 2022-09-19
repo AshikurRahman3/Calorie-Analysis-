@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".BmiWeightFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="Enter weight"
+            android:id="@+id/bmi_weight_fragment_enter_weight_button_id"
+            android:backgroundTint="@color/holo_green_light"
+            android:layout_height="wrap_content"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_marginTop="10dp"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:text="Start weight"
+               android:textAppearance="?android:textAppearanceSmall"
+               android:gravity="center"
+               android:layout_height="match_parent"/>
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:text="Current weight"
+               android:textAppearance="?android:textAppearanceSmall"
+               android:gravity="center"
+               android:layout_height="match_parent"/>
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:text="Lost weight"
+               android:id="@+id/bmi_fragment_weight_weight_lost_status_textview_id"
+               android:textAppearance="?android:textAppearanceSmall"
+               android:gravity="center"
+               android:layout_height="match_parent"/>
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="82.0"
+                    android:id="@+id/bmi_fragment_weight_start_weight_textview_id"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue_dark"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="kg"
+                    android:paddingTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="bottom"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="80.0"
+                    android:id="@+id/bmi_fragment_weight_current_weight_textview_id"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue_dark"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="kg"
+                    android:paddingTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="bottom"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="1.5"
+                    android:textSize="30sp"
+                    android:id="@+id/bmi_fragment_weight_lost_weight_textview_id"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="kg"
+                    android:paddingTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="bottom"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="History"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:gravity="left"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:nestedScrollingEnabled="true"
+            android:id="@+id/bmi_fragment_weight_history_listview_id"
+            android:listSelector="@color/gray_light"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

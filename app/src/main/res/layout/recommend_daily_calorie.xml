@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/average_calorie_text"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="Date Of Birth"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="1 Jan 2002"
+                android:backgroundTint="@android:color/white"
+                android:textStyle="bold"
+                android:id="@+id/recommend_calorie_date_button_id"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="Gender"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/darker_gray"
+                android:textColor="@android:color/white"
+                android:text="Male"
+                android:id="@+id/recommend_calorie_male_button_id"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:textSize="12sp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/darker_gray"
+                android:textColor="@android:color/white"
+                android:text="Female"
+                android:id="@+id/recommend_calorie_female_button_id"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Life Style"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Sedentary"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textSize="15sp"
+                android:id="@+id/recommend_calorie_sedendary_button_id"
+                android:textAllCaps="false"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:backgroundTint="@color/darker_gray"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Lightly Active"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/recommend_calorie_light_active_button_id"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/darker_gray"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Little or no Exercise    "
+                android:textSize="12sp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="top"
+                android:backgroundTint="@color/darker_gray"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="light exercise or\nsports 1-3 days/week"
+                android:textSize="12sp"
+                android:layout_marginRight="5dp"
+
+                android:gravity="center_horizontal"
+                android:layout_gravity="top"
+                android:backgroundTint="@color/darker_gray"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Moderately Active"
+                android:textSize="15sp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:id="@+id/recommend_calorie_moderate_active_button_id"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/darker_gray"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Very Active"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textAllCaps="false"
+                android:id="@+id/recommend_calorie_very_active_button_id"
+                android:backgroundTint="@color/darker_gray"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="moderate exercise/sports 3-5 days/week"
+                android:textSize="12sp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="top"
+                android:backgroundTint="@color/darker_gray"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="hard exercise/sports 6-7 days a week"
+                android:textSize="12sp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="top"
+                android:backgroundTint="@color/darker_gray"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="You want to"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Maintain\nWeight"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@color/darker_gray"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:id="@+id/recommend_calorie_maintain_weight_button_id"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Loss\nWeight"
+                android:backgroundTint="@color/darker_gray"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/recommend_calorie_loss_weight_button_id"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Gain\nWeight"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@color/darker_gray"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:id="@+id/recommend_calorie_gain_weight_button_id"
+                android:textStyle="bold"
+                android:layout_height="match_parent"/>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Half kg/week"
+                android:backgroundTint="@color/darker_gray"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:id="@+id/recommend_calorie_half_kg_button_id"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="1 kg/week"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@color/darker_gray"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:id="@+id/recommend_calorie_one_kg_button_id"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

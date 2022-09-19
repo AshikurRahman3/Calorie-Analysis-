@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/bmiViewgroupId"
+            android:background="@android:color/holo_green_light">
+
+            <Button
+                android:id="@+id/bmiButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@android:color/white"
+                android:text="BMI"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:textStyle="bold|italic" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/diaryViewgroupId"
+            android:background="@android:color/darker_gray">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/diaryButtonId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/white"
+                    android:text="My Diary"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/home_screen_diary_data_textview_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/foodViewgroupId"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/home_screen_foods"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/foodsButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@android:color/white"
+                android:text="Foods"
+                android:textColor="@android:color/black"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
