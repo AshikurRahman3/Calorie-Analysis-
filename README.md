@@ -1,113 +1,192 @@
-# G26-Calorie-Analysis
+# **Calorie Analysis**
 
-**Expected Timeline**
+An Android app designed to help users track their calorie intake, calculate BMI, and achieve their health and fitness goals through a user-friendly interface and advanced features.
 
-<img src= "gantt_chart.jpg">
+---
 
-**Report on Learning  Pre-requisisties**
-----------------------------------------
+## **Table of Contents**
 
-SL | Learning Task | Description | Status | Comment |
---:|:--------------|:------------|:------:|:--------|
-1| basic layout,views,input output | designing what user can see and handling input output
-2| Activity, fragments | more details about designing and behaviour of the app
-3| Data base(sqliter or firebase-not sure | about store data in users device
-4| json,api | getting data from Internet 
-
-
-**Feature Descriptions:**
-
-	1. Many food items with their calorie value
-	2. Calculating BMI
-	3. Calculating Daily calorie intake
-	4. user defined food amount or portion size
-	5. get health tips from internet
-
-**Milestone Submissions:**
-
-	Milestone 1:
-	containing food items calorie value, bmi calculation and designing the apps initial layout
-	
-	Milestone 2:
-	User defined food portions
-	
-	Milestone 3:
-	Get health tips from internet
+1. [Overview](#overview)  
+2. [Screenshots](#screenshots) 
+3. [Features](#features)  
+4. [Technologies Used](#technologies-used)  
+5. [Installation](#installation)   
+6. [Developers](#developers)   
 
 
-# Implemented Features
+---
 
-- **Calculate** daily consumed calories, user can also see his previous any other days consumed foods here
-- **Google Sign in** to save users progress, user will not lose his data if he sign in
-- Calculate recommended **daily calorie goal** by analysing gender, weight,lifestyle and purpose like weight maintain/loss/gain of the user
-- know users **BMI** and what is standard bmi
-- Know how much weight is ***normal/overweight/underweight** for users height
-- Know user **body fat percentage** which is based on users gender,height,age, weight
-- Watch **weight history** and know is user progressing or not to users weight loss/gain goal
-- Add users preferred **custom food** by setting their name , calories per servings. 
-- Four differnet catagoires for food-- **Main foods,Snacks,Desserts,Drinks**
-- **Search** food items if the food list long. user dont need to scroll everything
-- **Delete** or **update** weight, food or consumed food , if you thing user has entered them by mistake.
-- Watch other **users from around the world** about their progress, users list is sorted according to their weight lost value
-- User can also use the app as **guest** if user want to check the features without signing in
+## **Overview**
 
-# Not Implemented Features
+The **Calorie Analysis** app helps users maintain a healthy lifestyle by tracking calorie consumption, monitoring BMI, and setting weight goals. It offers personalized recommendations based on user input, supports Google Sign-In for secure data storage, and enables users to explore weight progress from others worldwide.
 
-- Food macros like how much carbs,protein, fat in each food item
-- Grabing Exercise data from other fitness apps like **Google fit** to match daily calorie goal
+---
 
-# Used Technologies and Functionalities
+## **Screenshots**
 
-- **Android Studio** as  **IDE** for developing android app
-- **Java** as a Backend coding language
-- **XML** to design user interface
-- **Firebase** as database to contain users related data
-- **Shared Preference** as simple storing functionality to store little data like storing users **user id** etc
-- **Picasso** libraray dependency to get **Google acccount** user image
-- **Android** functionalitites:
-  - **Fragments**, to contain user information or data in sub screen
-  - **FragmentContainerView**, to contain fragments
-  - **FragmentPagerAdapter**, to give  multiple fragments access functionalities through **ViewPager** in single **Activity** or any other **Fragment** as **Child Fragment**.
-  - **Floating Action Button** , to give much smooth experience to user when clicking some main functionality from homescreen 
-  - **Navigation Drawer**, to show different options to user by swiping from left to right in the home screen
-  - **Bottom NavigationView** , to provide click functionalities to move to other **Fragments** as well as to contain **Floating Action Button** which user can click to add weight or meal
-  - **LinearLayout, RelativeLayout, CoOrdinator Layout**, to hold other views
-  - **Button, Textview, ImageView** , to show texts , buttons, images
-  - **Listview**, to show list items provieded by **ArrayList**
-  -  **ViewPager, Tablayout** , to give swipe functionalities for moving from one **Fragment** to another and showing **Tabs**
-  -  **BaseAdapter**, to smoothly handle list items to show, it uses small number of views to show any number of items in the list. Its optimization gives much free memory to user.
-  - **OnClickeListener interface** to listen to click events of views
-  - **SearchView**, to provide **search** functionality in **Listview** , search results are based on users **typed** characters in the **search box**
-  - **Menu**, to provide some functionality in the **Action Bar**
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; text-align: center;">
 
-# Contribution
+  <div>
+    <a href="images/dashboard_norml_weight.png" target="_blank">
+      <img src="images/dashboard_norml_weight.png" alt="Home Screen" width="150" />
+    </a>
+    <p>Home Screen</p>
+  </div>
 
-- **Ashikur Rahman** ( Group member 1 )
-  - **All Backend Coding in java**
-  - **Initial setup when developing started**
-  - **Most of the user Inteface designing through XML**
-  - **Pusing and Commiting android project to github**
+  <div>
+    <a href="images/plus_button_options.png" target="_blank">
+      <img src="images/plus_button_options.png" alt="Floating Button" width="150" />
+    </a>
+    <p>Floating Button</p>
+  </div>
+
+  <div>
+    <a href="images/dashboard_main_foods.png" target="_blank">
+      <img src="images/dashboard_main_foods.png" alt="Food Categories" width="150" />
+    </a>
+    <p>Food Categories and Search</p>
+  </div>
+
+  <div>
+    <a href="images/recommending_calorie_goal.png" target="_blank">
+      <img src="images/recommending_calorie_goal.png" alt="Recommended Calorie Calculation" width="150" />
+    </a>
+    <p>Recommended Calorie Calculation</p>
+  </div>
+
+  <div>
+    <a href="images/bmi_and_stardand_weight.png" target="_blank">
+      <img src="images/bmi_and_stardand_weight.png" alt="BMI Progress" width="150" />
+    </a>
+    <p>BMI Progress</p>
+  </div>
+
+  <div>
+    <a href="images/Sign_in_Screen.png" target="_blank">
+      <img src="images/Sign_in_Screen.png" alt="Google Sign in" width="150" />
+    </a>
+    <p>Google Sign in</p>
+  </div>
+
+  <div>
+    <a href="images/weight_history.png" target="_blank">
+      <img src="images/weight_history.png" alt="User Progress History" width="150" />
+    </a>
+    <p>User Progress History</p>
+  </div>
+
+  <div>
+    <a href="images/navigation_drawer.png" target="_blank">
+      <img src="images/navigation_drawer.png" alt="Navigation Drawer" width="150" />
+    </a>
+    <p>Navigation Drawer</p>
+  </div>
+
+  <div>
+    <a href="images/global_users.png" target="_blank">
+      <img src="images/global_users.png" alt="Global Community" width="150" />
+    </a>
+    <p>Global Community</p>
+  </div>
+
+  <div>
+    <a href="images/today_diary.png" target="_blank">
+      <img src="images/today_diary.png" alt="Daily Food Intakes" width="150" />
+    </a>
+    <p>Daily Food Intakes</p>
+  </div>
+
+  <div>
+    <a href="images/add_to_diary_from_foods.png" target="_blank">
+      <img src="images/add_to_diary_from_foods.png" alt="Adding Consumed Food to Diary" width="150" />
+    </a>
+    <p>Adding Consumed Food to Diary</p>
+  </div>
+
+</div>
 
 
-- **Md.Shakil** ( Group member 2 )
-  - **Some user interface design through XML**
-  - **Resource gatthering like tutorials for learning, images, library needed to run**
-  - **details of food items**
-  - **Formula needed to calculate some features like daily calorie goal , bmi, body fat percentage**
+---
 
-# Acknowledgement 
+## **Features**
 
-We are giving **Thanks** to the following **Contributors** for helping us **Indirectly:**
+### **Implemented Functionalities**
+- **Calorie Tracking:**  
+  - Calculate daily consumed calories and view detailed history.  
+  - Add, update, or delete food entries with user-defined portion sizes.  
+  - Categorize food into Main Foods, Snacks, Desserts, and Drinks.  
+  - Search food items with ease.  
 
-- [Udacity](https://www.udacity.com) , their [Android basics](https://www.udacity.com/course/android-basics-user-interface--ud834) course helps to learn many required thing for android development
-- [Anisul Islam](https://www.youtube.com/c/anisulislamrubel), His youtube video playlist [Android development](https://www.youtube.com/c/anisulislamrubel/playlists?view=50&sort=dd&shelf_id=4), helped us very much to learn android development in **Bangla**
-- [Stack Overflow](https://stackoverflow.com) community for their help to learn how to fix problems and bugs in app
-- [GeeksForGeeks](https://www.geeksforgeeks.org), this websites some articles helped us how to implement certain feature in android app
-- [Google](https://www.google.com), This organizations **Search Engine** helped us a lot to find our necessary resources.
+- **BMI & Health Metrics:**  
+  - Calculate BMI and body fat percentage.  
+  - Get recommendations for weight goals (maintain/loss/gain).  
+  - Understand weight ranges for your height.  
+
+- **User Progress:**  
+  - Monitor weight history and progress toward goals.  
+  - View other users’ weight progress globally, ranked by weight lost.  
+
+- **User Authentication:**  
+  - Secure progress with Google Sign-In.  
+  - Explore app features in guest mode.  
+
+### **User Experience Features**
+- Bottom Navigation, Floating Action Buttons, and Navigation Drawers for intuitive navigation.  
+- Optimized ListViews with BaseAdapter for smooth scrolling.  
+- Multi-fragment layouts with swipe and tab navigation.  
+
+---
 
 
 
-# Developers
+## **Technologies Used**
+
+- **Programming & Design:**  
+  - Java (Backend)  
+  - XML (UI Design)  
+
+- **Database & Storage:**  
+  - Firebase (User Data)  
+  - Shared Preferences (Local Storage)  
+
+- **Libraries & Tools:**  
+  - Android Studio (IDE)  
+  - Picasso (Image Loading Library)  
+
+- **Android Features:**  
+  - Fragments, FragmentPagerAdapter, ViewPager  
+  - Navigation Drawer, Bottom NavigationView, Floating Action Button  
+  - ListView, SearchView, Menu  
+  - Layouts: LinearLayout, RelativeLayout, CoordinatorLayout  
+
+---
+
+## **Installation**
+
+Follow the steps below to get the project up and running on your local machine:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AshikurRahman3/Calorie-Analysis-.git
+
+2. Open the project in Android Studio:
+
+    - Launch Android Studio.
+    - Select **Open an existing project**.
+    - Navigate to the cloned project directory and open it.
+3. Sync the project with Gradle:
+
+    - After opening the project, Android Studio will prompt you to sync with Gradle.
+    - Click **Sync Now** to ensure all dependencies are properly downloaded.
+4. Run the project:
+
+    - Connect an Android device or start an emulator.
+    - Click on the **Run** button (green triangle) in Android Studio.
+    - Select your device and wait for the app to launch.
+
+
+
+## **Developers**
 
 - Group no: **26**
 - Group name: **Warriors**
