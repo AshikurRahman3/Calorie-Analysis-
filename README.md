@@ -7,9 +7,9 @@ An Android app designed to help users track their calorie intake, calculate BMI,
 ## **Table of Contents**
 
 1. [Overview](#overview)  
-2. [Screenshots](#screenshots) 
-3. [Features](#features)  
-4. [Technologies Used](#technologies-used)  
+2. [Features](#features)  
+3. [Technologies Used](#technologies-used) 
+4. [Screenshots](#screenshots)  
 5. [Installation](#installation)   
 6. [Developers](#developers)   
 
@@ -22,91 +22,6 @@ The **Calorie Analysis** app helps users maintain a healthy lifestyle by trackin
 
 ---
 
-## **Screenshots**
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; text-align: center;">
-
-  <div>
-    <a href="images/dashboard_norml_weight.png" target="_blank">
-      <img src="images/dashboard_norml_weight.png" alt="Home Screen" width="150" />
-    </a>
-    <p>Home Screen</p>
-  </div>
-
-  <div>
-    <a href="images/plus_button_options.png" target="_blank">
-      <img src="images/plus_button_options.png" alt="Floating Button" width="150" />
-    </a>
-    <p>Floating Button</p>
-  </div>
-
-  <div>
-    <a href="images/dashboard_main_foods.png" target="_blank">
-      <img src="images/dashboard_main_foods.png" alt="Food Categories" width="150" />
-    </a>
-    <p>Food Categories and Search</p>
-  </div>
-
-  <div>
-    <a href="images/recommending_calorie_goal.png" target="_blank">
-      <img src="images/recommending_calorie_goal.png" alt="Recommended Calorie Calculation" width="150" />
-    </a>
-    <p>Recommended Calorie Calculation</p>
-  </div>
-
-  <div>
-    <a href="images/bmi_and_stardand_weight.png" target="_blank">
-      <img src="images/bmi_and_stardand_weight.png" alt="BMI Progress" width="150" />
-    </a>
-    <p>BMI Progress</p>
-  </div>
-
-  <div>
-    <a href="images/Sign_in_Screen.png" target="_blank">
-      <img src="images/Sign_in_Screen.png" alt="Google Sign in" width="150" />
-    </a>
-    <p>Google Sign in</p>
-  </div>
-
-  <div>
-    <a href="images/weight_history.png" target="_blank">
-      <img src="images/weight_history.png" alt="User Progress History" width="150" />
-    </a>
-    <p>User Progress History</p>
-  </div>
-
-  <div>
-    <a href="images/navigation_drawer.png" target="_blank">
-      <img src="images/navigation_drawer.png" alt="Navigation Drawer" width="150" />
-    </a>
-    <p>Navigation Drawer</p>
-  </div>
-
-  <div>
-    <a href="images/global_users.png" target="_blank">
-      <img src="images/global_users.png" alt="Global Community" width="150" />
-    </a>
-    <p>Global Community</p>
-  </div>
-
-  <div>
-    <a href="images/today_diary.png" target="_blank">
-      <img src="images/today_diary.png" alt="Daily Food Intakes" width="150" />
-    </a>
-    <p>Daily Food Intakes</p>
-  </div>
-
-  <div>
-    <a href="images/add_to_diary_from_foods.png" target="_blank">
-      <img src="images/add_to_diary_from_foods.png" alt="Adding Consumed Food to Diary" width="150" />
-    </a>
-    <p>Adding Consumed Food to Diary</p>
-  </div>
-
-</div>
-
-
----
 
 ## **Features**
 
@@ -158,6 +73,24 @@ The **Calorie Analysis** app helps users maintain a healthy lifestyle by trackin
   - Navigation Drawer, Bottom NavigationView, Floating Action Button  
   - ListView, SearchView, Menu  
   - Layouts: LinearLayout, RelativeLayout, CoordinatorLayout  
+
+---
+
+
+## **Screenshots**
+
+## Screenshots
+
+| Home Screen | Floating Button | Food Categories and Search |
+|-------------|-----------------|----------------------------|
+| ![Home Screen](images/dashboard_norml_weight.png) | ![Floating Button](images/plus_button_options.png) | ![Food Categories](images/dashboard_main_foods.png) |
+| Recommended Calorie Calculation | BMI Progress | Google Sign In |
+| ![Recommended Calorie Calculation](images/recommending_calorie_goal.png) | ![BMI Progress](images/bmi_and_stardand_weight.png) | ![Google Sign in](images/Sign_in_Screen.png) |
+| User Progress History | Navigation Drawer | Global Community |
+| ![User Progress History](images/weight_history.png) | ![Navigation Drawer](images/navigation_drawer.png) | ![Global Community](images/global_users.png) |
+| Daily Food Intakes | Adding Consumed Food to Diary |
+| ![Daily Food Intakes](images/today_diary.png) | ![Adding Consumed Food to Diary](images/add_to_diary_from_foods.png) |
+
 
 ---
 
