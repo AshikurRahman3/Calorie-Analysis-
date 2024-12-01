@@ -7,9 +7,9 @@ An Android app designed to help users track their calorie intake, calculate BMI,
 ## **Table of Contents**
 
 1. [Overview](#overview)  
-2. [Features](#features)  
-3. [Technologies Used](#technologies-used) 
-4. [Screenshots](#screenshots)  
+2. [Screenshots](#screenshots)  
+3. [Features](#features)  
+4. [Technologies Used](#technologies-used) 
 5. [Installation](#installation)   
 6. [Developers](#developers)   
 
@@ -19,6 +19,23 @@ An Android app designed to help users track their calorie intake, calculate BMI,
 ## **Overview**
 
 The **Calorie Analysis** app helps users maintain a healthy lifestyle by tracking calorie consumption, monitoring BMI, and setting weight goals. It offers personalized recommendations based on user input, supports Google Sign-In for secure data storage, and enables users to explore weight progress from others worldwide.
+
+---
+
+
+## **Screenshots**
+
+
+| Home Screen | Floating Button | Food Categories and Search |
+|-------------|-----------------|----------------------------|
+| ![Home Screen](images/dashboard_norml_weight.png) | ![Floating Button](images/plus_button_options.png) | ![Food Categories](images/dashboard_main_foods.png) |
+| Recommended Calorie Calculation | BMI Progress | Google Sign In |
+| ![Recommended Calorie Calculation](images/recommending_calorie_goal.png) | ![BMI Progress](images/bmi_and_stardand_weight.png) | ![Google Sign in](images/Sign_in_Screen.png) |
+| User Progress History | Navigation Drawer | Global Community |
+| ![User Progress History](images/weight_history.png) | ![Navigation Drawer](images/navigation_drawer.png) | ![Global Community](images/global_users.png) |
+| Daily Food Intakes | Adding Consumed Food to Diary |
+| ![Daily Food Intakes](images/today_diary.png) | ![Adding Consumed Food to Diary](images/add_to_diary_from_foods.png) |
+
 
 ---
 
@@ -76,23 +93,6 @@ The **Calorie Analysis** app helps users maintain a healthy lifestyle by trackin
 
 ---
 
-
-## **Screenshots**
-
-## Screenshots
-
-| Home Screen | Floating Button | Food Categories and Search |
-|-------------|-----------------|----------------------------|
-| ![Home Screen](images/dashboard_norml_weight.png) | ![Floating Button](images/plus_button_options.png) | ![Food Categories](images/dashboard_main_foods.png) |
-| Recommended Calorie Calculation | BMI Progress | Google Sign In |
-| ![Recommended Calorie Calculation](images/recommending_calorie_goal.png) | ![BMI Progress](images/bmi_and_stardand_weight.png) | ![Google Sign in](images/Sign_in_Screen.png) |
-| User Progress History | Navigation Drawer | Global Community |
-| ![User Progress History](images/weight_history.png) | ![Navigation Drawer](images/navigation_drawer.png) | ![Global Community](images/global_users.png) |
-| Daily Food Intakes | Adding Consumed Food to Diary |
-| ![Daily Food Intakes](images/today_diary.png) | ![Adding Consumed Food to Diary](images/add_to_diary_from_foods.png) |
-
-
----
 
 ## **Installation**
 
