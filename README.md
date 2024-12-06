@@ -6,12 +6,13 @@ An Android app designed to help users track their calorie intake, calculate BMI,
 
 ## **Table of Contents**
 
-1. [Overview](#overview)  
-2. [Screenshots](#screenshots)  
-3. [Features](#features)  
-4. [Technologies Used](#technologies-used) 
-5. [Installation](#installation)   
-6. [Developers](#developers)   
+1. [Overview](#overview) 
+2. [Demo Video](#demo-video) 
+3. [Screenshots](#screenshots)  
+4. [Features](#features)  
+5. [Technologies Used](#technologies-used) 
+6. [Installation](#installation)   
+7. [Developers](#developers)   
 
 
 ---
@@ -22,6 +23,11 @@ The **Calorie Analysis** app helps users maintain a healthy lifestyle by trackin
 
 ---
 
+## **Demo Video**
+[![Demo Preview](./screenshots/calorie_analysis_small.gif)](./screenshots/calorie_analysis_large.gif)  
+*Click on the image to view it in a larger size.*
+
+---
 
 ## **Screenshots**
 
